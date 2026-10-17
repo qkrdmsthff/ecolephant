@@ -19,7 +19,7 @@
       "path": "ARCHITECTURE.md",
       "status": "draft",
       "owner": "project-maintainer",
-      "sha256": "c8ed89636fe61807a046945c43b45f97860189362bdd402ce8091ba83200fff6",
+      "sha256": "2505df60f5b3836206f50064da17e88b45f00372126e2f050c9e816c2b60afdc",
       "reviewed_on": "2026-10-17"
     },
     {
@@ -72,38 +72,52 @@
       "reviewed_on": "2026-10-17"
     },
     {
+      "path": "docs/decisions/adr-0003-camera-preview-scope.md",
+      "status": "draft",
+      "owner": "project-maintainer",
+      "sha256": "ab212227c66b7c3f35f3a8fc479a8f5fbf367b3e327cfca48d8426f77ba4bcd6",
+      "reviewed_on": "2026-10-17"
+    },
+    {
       "path": "docs/decisions/open-decisions.md",
       "status": "draft",
       "owner": "project-maintainer",
-      "sha256": "5c3ea51b83e12d8d9a1757fb8af4ed14648de00ad1fe7fb3a75d917e0ca5d304",
+      "sha256": "795040465e1b7be28aaa61890b0c6acec74ecfc76fe7c2b4d620fdcf51ed04b1",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/development/camera-preview.md",
+      "status": "draft",
+      "owner": "project-maintainer",
+      "sha256": "f701da720e896d676956d3a8822a90508893f9c233caaa256a2ef2dcbf2ab48d",
       "reviewed_on": "2026-10-17"
     },
     {
       "path": "docs/development/index.md",
       "status": "draft",
       "owner": "project-maintainer",
-      "sha256": "49b40281b67948ec64b50734f296131bc640ede0508487310a2a84d36564c57b",
+      "sha256": "0cb9a6f3e0ae484eb0211a135bcc626edf3005b8ef21df5986d18d4cf2206287",
       "reviewed_on": "2026-10-17"
     },
     {
       "path": "docs/development/local.md",
       "status": "draft",
       "owner": "project-maintainer",
-      "sha256": "44ab9c80d83339e7165cb56d2320c3d728b56f4b1467673bdb61a0c6d876c7ad",
+      "sha256": "61a151898f4dde16ba28e339ae9ede0fafefe56aff4067218ff8c920e1e9bf82",
       "reviewed_on": "2026-10-17"
     },
     {
       "path": "docs/development/mvp-status.md",
       "status": "draft",
       "owner": "project-maintainer",
-      "sha256": "90d3a6de9cfbdf3753c81fb31d230d908d2c2b8fde873107bfa6010d24f9da52",
+      "sha256": "6c27b3008360884afce6a8f93d51020923263ebb982ce82a21946e69f8aca41c",
       "reviewed_on": "2026-10-17"
     },
     {
       "path": "docs/index.md",
       "status": "draft",
       "owner": "project-maintainer",
-      "sha256": "7b4654241fbd7bd6979eca1517a85a669888330e94a13ab5fde661dae97823e7",
+      "sha256": "1e2c23847bd79406dea9579b6b165a9c7e54edd07ad6e49cb6e6c2a49c75ec13",
       "reviewed_on": "2026-10-17"
     },
     {
@@ -201,7 +215,7 @@
       "path": "frontend/README.md",
       "status": "draft",
       "owner": "frontend",
-      "sha256": "dd5435e6b9f00d80883f962bd9dfa155f2dfeaa192e62abb4e2ba9ae43cb7059",
+      "sha256": "69acbf3d8fd6f7051e286826202cf85d7db840cc28b29c2206fa4e228da8dd98",
       "reviewed_on": "2026-10-17"
     },
     {
@@ -264,7 +278,7 @@
       "path": "harness/docs/decisions/index.md",
       "status": "active",
       "owner": "harness-maintainer",
-      "sha256": "8ecfbb43bc01e84c2d8d4b3a70352f1cec7b8887c7d9e2de9a793ac605417e6d",
+      "sha256": "72cd36792c5189a15d508422077bb9f0fd3ec69227c163c27c0a6a7d0116b05a",
       "reviewed_on": "2026-10-17"
     },
     {
@@ -324,6 +338,13 @@
       "reviewed_on": "2026-10-17"
     },
     {
+      "path": "harness/docs/plans/completed/camera-preview.md",
+      "status": "historical",
+      "owner": "harness-maintainer",
+      "sha256": "ee425c5f34ad2d570673e9031ef3c20c6e36ca61f86dbf4fd9c767bcac5c7b44",
+      "reviewed_on": "2026-10-17"
+    },
+    {
       "path": "harness/docs/plans/completed/first-local-mvp.md",
       "status": "historical",
       "owner": "harness-maintainer",
@@ -341,7 +362,7 @@
       "path": "harness/docs/plans/completed/index.md",
       "status": "historical",
       "owner": "harness-maintainer",
-      "sha256": "337cca67312bcdd72b96e479454f61883945a11c305428b7eeefc1c64bdc6209",
+      "sha256": "712ef4c6256b5bf69b46909cdd06b0329150ef4fcf8385d6c722d1f67e90fe5c",
       "reviewed_on": "2026-10-17"
     },
     {
@@ -691,7 +712,7 @@
       "path": "harness/generated/document-map.md",
       "status": "active",
       "owner": "harness-maintainer",
-      "sha256": "4c8b610896ecc4f17c1a1b08d487c704796fe88644338ac135168f75b729e436",
+      "sha256": "0781d36ff8729fbcf29defbe3a27d05c4fc5f8f6396dcb169b1a1e31b61fe682",
       "reviewed_on": "2026-10-17"
     },
     {
@@ -712,7 +733,7 @@
       "path": "harness/NAVIGATOR.md",
       "status": "active",
       "owner": "harness-maintainer",
-      "sha256": "f4c011ee78b3a07a4bba74492e84611106fbbbc0ec2a2746b0f9f38019abf7c9",
+      "sha256": "aaffebb47f67b8f5ef51de51f902cdd8a0d072d126fc8f7e1bc9cf88b0124f21",
       "reviewed_on": "2026-10-17"
     },
     {
@@ -768,14 +789,14 @@
       "path": "PRD.md",
       "status": "draft",
       "owner": "product",
-      "sha256": "3416c76d1b9356735ddee14815176dd21413b88de395e154c65145dda0fdd5c9",
+      "sha256": "0d940d56e71e7839f8feccafd18408dbcb3aecd96bf89498a526b2a37fe47ef4",
       "reviewed_on": "2026-10-17"
     },
     {
       "path": "README.md",
       "status": "draft",
       "owner": "project-maintainer",
-      "sha256": "748c4e5e1d0abd26fde702999bf8ccda7f3b3c2c3889b90e5ac47649a83e6486",
+      "sha256": "288652e6ec3aa1563dbfc72c26e56a0966dcca36a17f3223c8cae19a9163b7d6",
       "reviewed_on": "2026-10-17"
     },
     {

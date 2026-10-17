@@ -14,10 +14,12 @@
 | [시간과 자세 기록의 집계 정의](../../docs/data/statistics.md) | `docs/data/statistics.md` | draft |
 | [브라우저 분석과 서버 결과 저장 경계](../../docs/decisions/adr-0001-browser-analysis.md) | `docs/decisions/adr-0001-browser-analysis.md` | draft |
 | [ADR-0002 · 사용자 지정 스택과 1차 데모](../../docs/decisions/adr-0002-first-mvp-stack.md) | `docs/decisions/adr-0002-first-mvp-stack.md` | draft |
+| [ADR-0003 · 모델 연결을 보류한 카메라 미리보기](../../docs/decisions/adr-0003-camera-preview-scope.md) | `docs/decisions/adr-0003-camera-preview-scope.md` | draft |
 | [미확정 결정과 검증 항목](../../docs/decisions/open-decisions.md) | `docs/decisions/open-decisions.md` | draft |
+| [카메라 미리보기](../../docs/development/camera-preview.md) | `docs/development/camera-preview.md` | draft |
 | [개발과 현재 상태](../../docs/development/index.md) | `docs/development/index.md` | draft |
 | [로컬 실행 안내](../../docs/development/local.md) | `docs/development/local.md` | draft |
-| [1차 MVP 구현 현황](../../docs/development/mvp-status.md) | `docs/development/mvp-status.md` | draft |
+| [현재 구현 현황](../../docs/development/mvp-status.md) | `docs/development/mvp-status.md` | draft |
 | [개발 문서 색인](../../docs/index.md) | `docs/index.md` | draft |
 | [센서 결합과 판정 규칙](../../docs/measurement/decision-rules.md) | `docs/measurement/decision-rules.md` | draft |
 | [지속 자세 알림과 교정 기록](../../docs/measurement/notifications.md) | `docs/measurement/notifications.md` | draft |
@@ -50,6 +52,7 @@
 | [진행하거나 대기하는 계획](../docs/plans/active/index.md) | `harness/docs/plans/active/index.md` | active |
 | [제품 구현 시작 계획](../docs/plans/active/product-kickoff.md) | `harness/docs/plans/active/product-kickoff.md` | active |
 | [실제 센서와 운영 연결](../docs/plans/active/sensor-and-cloud.md) | `harness/docs/plans/active/sensor-and-cloud.md` | active |
+| [카메라 미리보기 연결](../docs/plans/completed/camera-preview.md) | `harness/docs/plans/completed/camera-preview.md` | historical |
 | [1차 로컬 MVP 구현](../docs/plans/completed/first-local-mvp.md) | `harness/docs/plans/completed/first-local-mvp.md` | historical |
 | [하네스 세분화 완료 기록](../docs/plans/completed/harness-layout.md) | `harness/docs/plans/completed/harness-layout.md` | historical |
 | [완료 계획](../docs/plans/completed/index.md) | `harness/docs/plans/completed/index.md` | historical |

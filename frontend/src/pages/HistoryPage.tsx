@@ -58,7 +58,9 @@ export function HistoryPage() {
         <div>
           <span className="eyebrow">차곡차곡 쌓이는 나의 루틴</span>
           <h1>자세 기록</h1>
-          <p>종료·저장된 예시 기록으로 화면 흐름을 확인해 보세요.</p>
+          <p>
+            기존에 저장된 예시 기록을 확인할 수 있어요. 웹캠 측정 기록은 아직 생성하지 않습니다.
+          </p>
         </div>
         <span className="badge outline">
           <CalendarDays size={15} />
@@ -239,9 +241,9 @@ export function HistoryPage() {
           <div className="empty-state">
             <FolderHeart size={40} />
             <h3>첫 번째 기록을 기다리고 있어요.</h3>
-            <p>준비 화면에서 데모를 시작하고 종료해 보세요.</p>
+            <p>현재는 카메라 화면 확인 단계입니다. 측정 모델 연결 후 기록을 저장합니다.</p>
             <Link to="/" className="button button-primary">
-              데모 시작하기
+              카메라 화면으로
             </Link>
           </div>
         )}

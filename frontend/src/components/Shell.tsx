@@ -1,6 +1,6 @@
 import { Link, Outlet, useRouterState } from '@tanstack/react-router';
 import { useQuery } from '@tanstack/react-query';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import {
   Activity,
   ArrowUpRight,
@@ -12,43 +12,24 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 import { api } from '../api/client';
-import { useMeasurement } from '../state/measurement';
 import { usePreferences } from '../state/preferences';
 import { Modal, Toggle } from './ui';
 
 export function Shell() {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
-  const phase = useMeasurement((s) => s.phase),
-    pending = useMeasurement((s) => s.pending);
   const muted = usePreferences((s) => s.muted),
     setMuted = usePreferences((s) => s.setMuted);
   const [settings, setSettings] = useState(false);
   const health = useQuery({ queryKey: ['health'], queryFn: api.health, refetchInterval: 15000 });
-  const running = ['starting', 'active', 'paused', 'recalibrating', 'ending'].includes(phase);
-  useEffect(() => {
-    if (!running && !pending) return;
-    const handler = (event: BeforeUnloadEvent) => {
-      event.preventDefault();
-      event.returnValue = '';
-    };
-    window.addEventListener('beforeunload', handler);
-    return () => window.removeEventListener('beforeunload', handler);
-  }, [running, pending]);
   const navigation = [
-    { to: '/', icon: LayoutDashboard, label: '측정 준비' },
-    { to: '/measure', icon: Activity, label: '실시간 측정' },
+    { to: '/', icon: LayoutDashboard, label: '카메라 준비' },
+    { to: '/measure', icon: Activity, label: '측정 준비 중' },
     { to: '/history', icon: ClipboardList, label: '자세 기록' },
   ] as const;
   return (
     <div className="app-shell">
       <aside className="sidebar">
-        <Link
-          to="/"
-          className="brand"
-          onClick={(event) => {
-            if (running) event.preventDefault();
-          }}
-        >
+        <Link to="/" className="brand">
           <span className="brand-mark">
             <Leaf size={24} />
           </span>
@@ -59,7 +40,7 @@ export function Shell() {
         <span className="nav-caption">MY POSTURE</span>
         <nav aria-label="주요 메뉴">
           {navigation.map(({ to, icon: Icon, label }) => {
-            const disabled = running && to !== '/measure';
+            const disabled = to === '/measure';
             return (
               <Link
                 key={to}
@@ -72,7 +53,6 @@ export function Shell() {
               >
                 <Icon size={19} />
                 {label}
-                {to === '/measure' && running && <span className="nav-dot" />}
               </Link>
             );
           })}
@@ -107,8 +87,8 @@ export function Shell() {
             {pathname.startsWith('/history')
               ? '자세 기록'
               : pathname === '/measure'
-                ? '실시간 측정'
-                : '측정 준비'}
+                ? '측정 준비 중'
+                : '카메라 준비'}
           </div>
           <div className="topbar-right">
             <span className={`connection ${health.isSuccess ? 'online' : 'offline'}`}>
@@ -128,14 +108,14 @@ export function Shell() {
             <ShieldCheck size={14} />
             영상은 업로드하지 않아요.
           </span>
-          <span>예시 데이터로 동작하는 1차 MVP</span>
+          <span>카메라 미리보기 · AI 모델 연결 대기</span>
         </footer>
       </div>
       <Modal
         open={settings}
         onOpenChange={setSettings}
         title="알림 설정"
-        description="이번 MVP는 화면 알림을 제공합니다. 시스템 알림·소리는 후속 연결 항목입니다."
+        description="AI 모델과 측정 기능 연결 후 사용할 알림 설정입니다. 현재는 알림을 실행하지 않습니다."
       >
         <Toggle label="화면 알림 받기" checked={!muted} onChange={(value) => setMuted(!value)} />
         <p className="settings-help">

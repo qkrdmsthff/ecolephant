@@ -45,3 +45,9 @@ flowchart LR
 사용자 지정 스택은 [ADR-0002](docs/decisions/adr-0002-first-mvp-stack.md)에 기록했습니다.
 frontend와 ai는 npm workspace이며 backend는 Flask입니다. 최초 실행 저장소는 SQLite이고 DynamoDB 어댑터는 실환경 검증 대기입니다.
 모든 저장 세션은 data_source=demo입니다. [현재 범위](docs/development/mvp-status.md)는 실제 센서 출시 범위와 구분합니다.
+
+## 현재 카메라 연결 단계
+
+실제 미리보기는 frontend의 getUserMedia와 video 요소로 처리합니다.
+AI 모델 어댑터는 null입니다. 카메라 경로에서 분석·알림·세션 저장은 호출하지 않습니다.
+[범위 결정](docs/decisions/adr-0003-camera-preview-scope.md)과 [사용 안내](docs/development/camera-preview.md)를 확인하세요.

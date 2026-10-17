@@ -20,3 +20,5 @@
 ## 실행 코드
 
 [로컬 실행](../docs/development/local.md) · [현재 구현 상태](../docs/development/mvp-status.md) · [스택 경계](docs/architecture/runtime.md).
+
+현재 카메라 화면은 [카메라 안내](../docs/development/camera-preview.md)를 따릅니다. 모델 연결은 사용자 요청으로 보류했습니다.

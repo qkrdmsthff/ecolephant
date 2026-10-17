@@ -1713,3 +1713,244 @@ input[type='range'] {
     scroll-behavior: auto !important;
   }
 }
+
+.camera-preparation-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(270px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.webcam-stage {
+  position: relative;
+  aspect-ratio: 16/10;
+  background: #182c24;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.webcam-stage video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  visibility: hidden;
+}
+.webcam-stage.is-playing video {
+  visibility: visible;
+}
+.webcam-stage video.mirrored {
+  transform: scaleX(-1);
+}
+.webcam-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 13px;
+  padding: 25px;
+  color: #d1decb;
+}
+.webcam-empty-icon {
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #55715d;
+  border-radius: 22px;
+  color: #a8c19f;
+  background: #2d4436;
+}
+.webcam-empty strong {
+  font-size: 14px;
+  font-weight: 500;
+}
+.webcam-empty p {
+  font-size: 12px;
+  color: #a5b99c;
+}
+.webcam-stage-label,
+.webcam-resolution {
+  position: absolute;
+  bottom: 13px;
+  padding: 6px 9px;
+  border-radius: 5px;
+  background: #122219ba;
+  color: #d0dec7;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.webcam-stage-label {
+  left: 13px;
+}
+.webcam-resolution {
+  right: 13px;
+}
+.webcam-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+}
+.webcam-controls strong {
+  font-size: 13px;
+}
+.webcam-controls p {
+  font-size: 11px;
+  margin-top: 6px;
+}
+.webcam-controls .button-row {
+  flex-shrink: 0;
+}
+.webcam-privacy-note {
+  border-top: 1px solid #e9eee3;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 11px;
+  color: #84917b;
+}
+.model-placeholder {
+  text-align: left;
+}
+.model-placeholder-icon {
+  display: grid;
+  place-items: center;
+  width: 59px;
+  height: 59px;
+  border: 1px solid #dce5d4;
+  border-radius: 17px;
+  background: #f2f6eb;
+  color: #8ba372;
+  margin-bottom: 23px;
+}
+.model-placeholder h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.model-placeholder > p {
+  font-size: 12px;
+  margin: 17px 0 21px;
+}
+.model-placeholder-steps {
+  display: grid;
+  gap: 14px;
+  margin: 22px 0 25px;
+  font-size: 12px;
+  color: #6f8b5c;
+}
+.model-placeholder-steps span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.model-placeholder-steps .pending {
+  color: #a3ae98;
+}
+.model-pending-button {
+  width: 100%;
+  background: #dce5d2 !important;
+  color: #7b8f6b !important;
+  border-color: #dce5d2 !important;
+}
+.camera-guide ol {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.camera-guide li {
+  display: flex;
+  gap: 14px;
+}
+.camera-guide li > span {
+  display: grid;
+  place-items: center;
+  border: 1px solid #e0e7d8;
+  border-radius: 8px;
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  color: #8ea078;
+  font-size: 11px;
+}
+.camera-guide strong {
+  font-size: 12px;
+}
+.camera-guide p {
+  font-size: 11px;
+  margin-top: 4px;
+}
+.camera-local-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #93a37f;
+  padding: 19px 5px;
+}
+.camera-local-note p {
+  font-size: 11px;
+  color: #93a37f;
+}
+@media (max-width: 1100px) {
+  .camera-preparation-layout {
+    grid-template-columns: minmax(0, 1.6fr) minmax(235px, 1fr);
+    gap: 18px;
+  }
+  .webcam-controls {
+    flex-wrap: wrap;
+  }
+  .webcam-controls .button-row {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .camera-preparation-layout {
+    grid-template-columns: 1fr;
+  }
+  .camera-preparation-aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .camera-preparation-aside .model-placeholder {
+    grid-row: span 2;
+  }
+  .camera-preparation-aside .privacy-card {
+    margin-top: 0;
+  }
+  .camera-local-note {
+    padding-top: 0;
+  }
+}
+@media (max-width: 650px) {
+  .camera-preparation-aside {
+    display: block;
+  }
+  .webcam-stage {
+    aspect-ratio: 4/3;
+  }
+  .webcam-empty strong {
+    font-size: 12px;
+  }
+  .webcam-empty p {
+    font-size: 11px;
+  }
+  .webcam-controls .button-row {
+    width: auto;
+  }
+  .webcam-controls {
+    gap: 15px;
+  }
+  .webcam-stage-label,
+  .webcam-resolution {
+    font-size: 9px;
+  }
+  .model-placeholder h2 {
+    font-size: 18px;
+  }
+}
