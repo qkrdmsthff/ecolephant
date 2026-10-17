@@ -1,0 +1,139 @@
+{
+  "kind": "synthetic-local-message-cases",
+  "cases": [
+    {
+      "id": "WS-01",
+      "schema": "MotionSample",
+      "valid": true,
+      "semantics_valid": true,
+      "value": {
+        "type": "motion.sample",
+        "stream_id": "10000000-0000-4000-8000-000000000001",
+        "seq": 1,
+        "helper_monotonic_ms": 1500.5,
+        "pitch_rad": 0.2,
+        "roll_rad": 0.01,
+        "rotation_rate_rad_s": {
+          "x": 0.1,
+          "y": 0,
+          "z": 0
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "WS-02",
+      "schema": "ClientHello",
+      "valid": true,
+      "semantics_valid": true,
+      "value": {
+        "type": "client.hello",
+        "protocol_version": "1.0",
+        "pairing_token": "synthetic-fixture-only-not-a-real-secret"
+      },
+      "notes": ""
+    },
+    {
+      "id": "WS-03",
+      "schema": "ClockPong",
+      "valid": true,
+      "semantics_valid": true,
+      "value": {
+        "type": "clock.pong",
+        "ping_id": "10000000-0000-4000-8000-000000000001",
+        "web_send_monotonic_ms": 1000,
+        "helper_received_ms": 5000,
+        "helper_sent_ms": 5001
+      },
+      "notes": ""
+    },
+    {
+      "id": "WS-04",
+      "schema": "SensorStatus",
+      "valid": true,
+      "semantics_valid": true,
+      "value": {
+        "type": "sensor.status",
+        "stream_id": "10000000-0000-4000-8000-000000000001",
+        "status": "motion_unavailable",
+        "worn_state": "unknown"
+      },
+      "notes": ""
+    },
+    {
+      "id": "WS-05",
+      "schema": "MotionSample",
+      "valid": false,
+      "semantics_valid": true,
+      "value": {
+        "type": "motion.sample",
+        "stream_id": "10000000-0000-4000-8000-000000000001",
+        "seq": 1,
+        "helper_monotonic_ms": 1500.5,
+        "pitch_rad": 90,
+        "roll_rad": 0.01,
+        "rotation_rate_rad_s": {
+          "x": 0.1,
+          "y": 0,
+          "z": 0
+        }
+      },
+      "notes": "도와 rad 혼동"
+    },
+    {
+      "id": "WS-06",
+      "schema": "MotionSample",
+      "valid": false,
+      "semantics_valid": true,
+      "value": {
+        "type": "motion.sample",
+        "stream_id": "10000000-0000-4000-8000-000000000001",
+        "seq": 0,
+        "helper_monotonic_ms": 1500.5,
+        "pitch_rad": 0.2,
+        "roll_rad": 0.01,
+        "rotation_rate_rad_s": {
+          "x": 0.1,
+          "y": 0,
+          "z": 0
+        }
+      },
+      "notes": ""
+    },
+    {
+      "id": "WS-07",
+      "schema": "MotionSample",
+      "valid": false,
+      "semantics_valid": true,
+      "value": {
+        "type": "motion.sample",
+        "stream_id": "10000000-0000-4000-8000-000000000001",
+        "seq": 1,
+        "helper_monotonic_ms": 1500.5,
+        "pitch_rad": 0.2,
+        "roll_rad": 0.01,
+        "rotation_rate_rad_s": {
+          "x": 0.1,
+          "y": 0,
+          "z": 0
+        },
+        "image": "forbidden"
+      },
+      "notes": ""
+    },
+    {
+      "id": "WS-08",
+      "schema": "ClockPong",
+      "valid": true,
+      "semantics_valid": false,
+      "notes": "같은 도우미 시계 내 수신/송신 역행",
+      "value": {
+        "type": "clock.pong",
+        "ping_id": "10000000-0000-4000-8000-000000000001",
+        "web_send_monotonic_ms": 1000,
+        "helper_received_ms": 5000,
+        "helper_sent_ms": 4999
+      }
+    }
+  ]
+}

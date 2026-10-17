@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "로컬 AirPods 도우미 메시지 초안",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/ClientHello"
+    },
+    {
+      "$ref": "#/$defs/HelperReady"
+    },
+    {
+      "$ref": "#/$defs/ClockPing"
+    },
+    {
+      "$ref": "#/$defs/ClockPong"
+    },
+    {
+      "$ref": "#/$defs/MotionSample"
+    },
+    {
+      "$ref": "#/$defs/SensorStatus"
+    },
+    {
+      "$ref": "#/$defs/HelperError"
+    }
+  ],
+  "$defs": {
+    "ClientHello": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "client.hello"
+        },
+        "protocol_version": {
+          "const": "1.0"
+        },
+        "pairing_token": {
+          "type": "string",
+          "minLength": 32,
+          "maxLength": 128
+        }
+      },
+      "required": [
+        "type",
+        "protocol_version",
+        "pairing_token"
+      ]
+    },
+    "HelperReady": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "helper.ready"
+        },
+        "protocol_version": {
+          "const": "1.0"
+        },
+        "stream_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "sample_rate_hz": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 200
+        },
+        "head_motion_available": {
+          "type": "boolean"
+        },
+        "clock_unit": {
+          "const": "ms"
+        }
+      },
+      "required": [
+        "type",
+        "protocol_version",
+        "stream_id",
+        "sample_rate_hz",
+        "head_motion_available",
+        "clock_unit"
+      ]
+    },
+    "ClockPing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "clock.ping"
+        },
+        "ping_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "web_send_monotonic_ms": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "type",
+        "ping_id",
+        "web_send_monotonic_ms"
+      ]
+    },
+    "ClockPong": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "clock.pong"
+        },
+        "ping_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "web_send_monotonic_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "helper_received_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "helper_sent_ms": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "type",
+        "ping_id",
+        "web_send_monotonic_ms",
+        "helper_received_ms",
+        "helper_sent_ms"
+      ]
+    },
+    "MotionSample": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "motion.sample"
+        },
+        "stream_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "seq": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "helper_monotonic_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "pitch_rad": {
+          "type": "number",
+          "minimum": -3.141592653589793,
+          "maximum": 3.141592653589793
+        },
+        "roll_rad": {
+          "type": "number",
+          "minimum": -3.141592653589793,
+          "maximum": 3.141592653589793
+        },
+        "rotation_rate_rad_s": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "x": {
+              "type": "number",
+              "minimum": -100,
+              "maximum": 100
+            },
+            "y": {
+              "type": "number",
+              "minimum": -100,
+              "maximum": 100
+            },
+            "z": {
+              "type": "number",
+              "minimum": -100,
+              "maximum": 100
+            }
+          },
+          "required": [
+            "x",
+            "y",
+            "z"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "stream_id",
+        "seq",
+        "helper_monotonic_ms",
+        "pitch_rad",
+        "roll_rad",
+        "rotation_rate_rad_s"
+      ]
+    },
+    "SensorStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "sensor.status"
+        },
+        "stream_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "connected",
+            "disconnected",
+            "motion_unavailable",
+            "permission_denied"
+          ]
+        },
+        "worn_state": {
+          "type": "string",
+          "enum": [
+            "worn",
+            "not_worn",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "stream_id",
+        "status",
+        "worn_state"
+      ]
+    },
+    "HelperError": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "helper.error"
+        },
+        "code": {
+          "type": "string",
+          "enum": [
+            "authentication_failed",
+            "origin_rejected",
+            "protocol_unsupported",
+            "motion_unavailable",
+            "rate_limited"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "code"
+      ]
+    }
+  }
+}

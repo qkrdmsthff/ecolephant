@@ -1,0 +1,719 @@
+{
+  "version": "0.2",
+  "documents": [
+    {
+      "path": "AGENTS.md",
+      "status": "active",
+      "owner": "project-maintainer",
+      "sha256": "69b72056e24ae461411b3ab364653301e1098b91c11124ecac068209247d972f",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "ai/README.md",
+      "status": "draft",
+      "owner": "ai",
+      "sha256": "c477e4a1592ac6d064d0b8d7a8cdc6e9ff81e24a22ecbf06750aadbb2c0f594e",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "status": "draft",
+      "owner": "project-maintainer",
+      "sha256": "9bcf0b8865bd29597446b0c44f2b18439ced071a79b4a846f8eafa661652aa45",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "backend/README.md",
+      "status": "draft",
+      "owner": "backend",
+      "sha256": "3f75c28734d7f57f7a4dff825055cf4acdfdcd02edac57432d422403bcbdb37d",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/api/airpods-websocket.md",
+      "status": "draft",
+      "owner": "backend",
+      "sha256": "e032cd57c1ba814e26ac1fdab810dee0a26ea76be40d5aa869412a3a27085a47",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/api/README.md",
+      "status": "draft",
+      "owner": "backend",
+      "sha256": "d859171ebd28f7914f6ddbfd3ff570464ab92efc4c6556707c27fda6693732ca",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/data/model.md",
+      "status": "draft",
+      "owner": "backend",
+      "sha256": "a19368d4535dc46a23b6217e6031480d85420d86b5443a681ef6dc118cff1c88",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/data/statistics.md",
+      "status": "draft",
+      "owner": "backend",
+      "sha256": "a194beefa197e44d5bedb42bbcd181dcb3ad8609373a52f8d90801367a8e6d98",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/decisions/adr-0001-browser-analysis.md",
+      "status": "draft",
+      "owner": "project-maintainer",
+      "sha256": "8b18c1d901d6ee781072556d3adfd00970a064855465a0dddcc6abcd5180a03f",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/decisions/open-decisions.md",
+      "status": "draft",
+      "owner": "project-maintainer",
+      "sha256": "908c3e50b26e90505001808b8590f52da0d2b08ae1b72e8ff16e50da48c6376f",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/index.md",
+      "status": "draft",
+      "owner": "project-maintainer",
+      "sha256": "8719b3e48b76b687ab0aaaa3a2fe1531d162d45de0f2406bc781919a8cf902ea",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/measurement/decision-rules.md",
+      "status": "draft",
+      "owner": "ai",
+      "sha256": "b45f1eaf7ac02359cc43cca4c65f649596fa3c74774ba7cba4ffc5365814052c",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/measurement/notifications.md",
+      "status": "draft",
+      "owner": "ai",
+      "sha256": "512c76476c8c3444a3b116b2f8b717e9a979c3601e0bed4db5b7745e18e46e48",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/measurement/signal-pipeline.md",
+      "status": "draft",
+      "owner": "ai",
+      "sha256": "2759cfb68956508cb029765ef9ebf5903b53e7af7273074878b92b7cfef6989c",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/product/requirements.md",
+      "status": "draft",
+      "owner": "product",
+      "sha256": "9c56c934b1e4e084c162e7636c8771701925995abdb005d91100f211e6473b73",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/product/scope-and-journeys.md",
+      "status": "draft",
+      "owner": "product",
+      "sha256": "3e2aaca0bc1ab8a089234da0fb313b2a53ae2aeeb7ef0bf919a26ad75a604db5",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/quality/acceptance.md",
+      "status": "draft",
+      "owner": "reviewer",
+      "sha256": "5ff481fbe32274ad55679fb7ebb4869239ebcffbaf3a1ce77ab32c360b129b9f",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/quality/measurement-validation.md",
+      "status": "draft",
+      "owner": "reviewer",
+      "sha256": "67d13038a6c29b3617770cf2bf3313d8b8e7ca47cb41c497db76d8d02716cf59",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/references/evidence-register.md",
+      "status": "reference",
+      "owner": "product",
+      "sha256": "4c7f5c581434207f88c529ea710b46d997342b758f301bf426c2a2ac7f2e4e7b",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/references/README.md",
+      "status": "reference",
+      "owner": "product",
+      "sha256": "b05f622ff38ae003e2ed570ab09bca8725870d2c6fecd148d36b7b7eebf5697b",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/security/privacy-and-security.md",
+      "status": "draft",
+      "owner": "security",
+      "sha256": "c2f722a44beeb7c5d6ff6ccc6273ad7bad0bda3b46a9c13d608e7651489f29f2",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/ui/screens.md",
+      "status": "draft",
+      "owner": "frontend",
+      "sha256": "52a1e8a19020aa2d49aa1184f12dfe900b11eda9f6ea569e7a9e6a1ec663b0c0",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "docs/ui/state-machine.md",
+      "status": "draft",
+      "owner": "frontend",
+      "sha256": "67e0fcc14b9dea5f0531c7ed8ece33958e7e9963e30966159e13ef85d19963ad",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "frontend/README.md",
+      "status": "draft",
+      "owner": "frontend",
+      "sha256": "0df9527da78085936a031d376a4f5eb8a1ac8fc0efd0e32dfdfba2a90e3f6817",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/AGENTS.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "3afcfe5720b9bfce87904f9ba5de90cece8379849240a1b0eb2e5daf968d8a86",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/ARCHITECTURE.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "3f1fa6d87249db0c01a16922818519947d8e538adff1d3b53df9808bc8cb29fd",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/architecture/boundaries.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "fdd033d4710e82f58304e50de667e6b35722af84882a1dc328ab39d7c227c36e",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/architecture/dependencies.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "990cac291d24ad835a8fdad5ec6cba604441432e2dcaac6e9d32fc63416e90f5",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/architecture/document-ownership.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "9ce4430559c3b5a83b09e3bacfcc3b83958f17bf8353ca0842caa9ac1d7e2aae",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/architecture/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "d0d148da37eebe08ed931a113557a3f2a69d530b43d73e7345a64aca51153da7",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/decisions/harness-layout.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "d9f8a5ab4b1ff8fa389fb1412dd6b108bb8fe2abf4aa86c16f7d3536c4bd1233",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/decisions/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "12af2389beb2ebe7189bfa25a00a19bf6c116acc24b9c146c39bca1e789d023b",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/design/frontend.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "dea04746b15fc4934a9d71fdd50b3fb782ca99e18f2daddefaa1d4ca0dec2a2b",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/design/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "4b60ace68b298750374c2ab466f5112c1c876f44aea9980d3dc5fee26d0029e4",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/design/measurement.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "872efb73620081247851cb05f41ec06068e5577a110db9c90b82be8c2d1b7ed9",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/design/principles.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "e28926476431bc3b096f258df83551feb53e536400d850804cb036280501243c",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "b55f3acc050fc4f5f964413476db162a5f305513e8442325001c19a7aea8ea96",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/plans/active/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "b4339df0974bb610715f02e18ab347d4f76c51a759e33899a8cf5e7a80398e73",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/plans/active/product-kickoff.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "0e88ae4bf119df3d0b4681dcdf4128a1b3c9e00133e91e7c7ccf9c765fd48db6",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/plans/completed/harness-layout.md",
+      "status": "historical",
+      "owner": "harness-maintainer",
+      "sha256": "943f5d019030aaa2f013cce0d1f0ef3c616e070d60dd2fa94de7390391831212",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/plans/completed/index.md",
+      "status": "historical",
+      "owner": "harness-maintainer",
+      "sha256": "655bc3a41594c980aa747744ae4402bdfbad481d10cad69bdfe30f5fade53eae",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/plans/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "f706651d16f6a4bad6addadba36056db01654018c3b8cf508e3d29e35170360b",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/plans/mvp-roadmap.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "5cc4cbae8d63fc585d2c462a02dd5a5eeceed297f4c2149e0d63167831dc7117",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/plans/tech-debt.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "f04c4caf3eefe8011b889542c4ec79a2b920dd722e435eaaafb2eb18d4228a18",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/product/change-scope.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "805797c5bf4f1b1d2186b9d27f7174ce7e3eac3cb4557bb413f4890d65d7f240",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/product/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "f94df9a847fef179deee02f885561d4a580473a578aba4b7153f6688327f595a",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/product/overview.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "4024803ead4bed00c89cd1856a9efbfd339b8103cd89fe0a67b7927e7e7a6455",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/quality/contracts.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "55bacf3992e4597bbfbf1b1d3581a891e4afcb7c5a709a7a7a1d965d3603ff60",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/quality/freshness.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "59401aaae50646365f62d8009ae6ab2cd449c3f13689bc085c568f2c87979692",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/quality/gates.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "f71ef31483ab004e75cf6a9c19fab86cc3fafa7cfc9f7992c86d26368f5c67da",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/quality/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "d96a2909f7348f3cb3e2062a18dea448ea78904e03031798aa02f838f7ce3d80",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/quality/risk-register.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "3153cb0d3b833a0789d36d4880d8be166151631ce3f7400c5494730b8b28ca8e",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/quality/scorecard.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "7a77bafcbacafc898c47f6017526244022134203ba93c27ee240e5af17c9b636",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/references/harness-pattern.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "968e80ceecbc2e948e7aeae59b09891e960e374f7dea43f58334152541a960a9",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/references/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "ced4b321572139dee0db4f6846b2cc1966a7a77da47087c66e0fe3d72c9ad505",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/reliability/failure-modes.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "46068f530368e3aee6bf48570bd164fc05614d87a25c1aded4c71f0e7f43250f",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/reliability/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "cd33aa71d04b413ec2bbffc33821045d35608082092e7adb172860d32445659a",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/reliability/observability.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "14339ba2743f8c1ff8049059c67e6ac0538ac0ea7d1571596d4f0826bc6edee6",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/reliability/recovery.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "16fe82053ed04ce541dd79ae74c44c1d251723726b798a007eaf513b6293b2d1",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/roles/architect.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "5fa245209e57b03acbbdd158ff9369fb37793c20dda143b404e0e77797e79b84",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/roles/committer.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "d89adfd918f5293cef4b9505dab9427426d3a0c5186b9781c9b8ac10b8722622",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/roles/deployer.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "393cbb5c1a1f2371fbd157b9147e6fa13c922e8ad811b3e06287a623723262c5",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/roles/implementer.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "45b96a3752f25c18e92a8ac393502f128137946f0504f354edfbd9101a35adb3",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/roles/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "7bcd9b10032fcd55a2157dee8365134932dd656fc598cfc04759ca776a350419",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/roles/planner.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "4dcb49819ea1ba84383c2b81dca01249eaaa8132fa43c2877c11eded4b6f6f8d",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/roles/reviewer.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "95397b0e67cd5ad4f50214bef3ffe525f083a81315dcd491b647fd9e00036e0f",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/roles/security.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "e53a4505bfe4b13fdaf47afd023b9a043442349f8e626083e13b35417b69ea35",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/security/data-boundaries.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "be1944253e6251ff86f4ac6231263b896023976944184f505c39ab604e156548",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/security/helper.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "f4ce5f4abca85706f3997df634f2ca9aa5e9db8366c91d4d63d570c56f292ee3",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/security/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "7bcd1ae32b7ede1c8b6d0931d1a55bf77a1201a48d92ef1a1ae0328bb01e0a99",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/security/ownership.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "86be622dbafea57fc23dd82b9eed06f9f8df6077657cc8db81fd7f6826f18126",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/security/secrets.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "48485875b450fcac6dfc1195a8dcdda414d019d4590877f005a3e7868756cb9b",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/templates/decision.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "9dd468c59a504f921666a79ffd67755eb1409bf3cf2c72218f7df702de75e21d",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/templates/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "0c6ed64f88ce17bb2d538c626f2137693b66d38bdc32269dcb7d05b0fb934965",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/templates/review.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "c52698dd8ae9602360ce0088df6ed4f5d6511417be53d4b0e5e1d7fae0c5a2d4",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/templates/task.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "9bc5c265ed536c34b208284743842a55541b49558bef9057a946aa46283630fd",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/templates/verification.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "b372611960b6bb62df41846d175171ec3b5308f98cf8ac69cea56ba0bddac6f2",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/workflows/bug-fix.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "ab5807fbc08c9c647a840f9f6ef43d15d35f7e1dadfa3cd57ce9c5009a631c42",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/workflows/change.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "1c079e480f9f4422b91646307c61aab4e99515b1a24f2faaecc924945ed070ab",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/workflows/commit-and-push.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "7213ec462fa4ca07189cc30a633ef4ae772a26959acbf38bf245ec805e589699",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/workflows/documentation-change.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "76ae26e59b5e60f76e006f0341a5d588076712ce1590b6399fa55c65a87c75bd",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/workflows/feature-change.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "c64acb6d14342c8030dfa9b07d7d104eb26cc3affd8ca1e622fbd8c6ff580d64",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/workflows/index.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "6e9d64fb93affc377fce5e3c536326e87c5138f636b8a1737f6ed83e3a76babc",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/workflows/release.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "506785cc0ab700300ba86d710dbcb647e9e9d8a34c2b2a233a1a84bbedd22c22",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/docs/workflows/review.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "af266115d0e019e571fff6f4d00dff97557fe2dd6409b83ffe1bab80b030787d",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/fixtures/acceptance/README.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "0934bfc6d41109fdb62a5e31e7afaee4e75e94fc954d60709750d8382c34fa33",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/fixtures/helper/README.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "148461b44c4d0ccfa6320c055c9facdde9c981183716c1d7c4d6a2e22025a242",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/fixtures/http/README.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "7911567bfd800558210662d089ebc31a6248c80685e0c21eef04d558c8e89d98",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/fixtures/policy/README.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "653734f0bef6532d536013c81b2952f8edc86bbc6c2bbc0c900b5b609bed9e8f",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/fixtures/README.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "1ba37ef8c278928722a00cbdc07cf0753f6c8ed201709333c88850c16e398037",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/generated/document-map.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "313fc872e410954ea7141decee324bf492fddda390387855ab9034ae03177fe5",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/generated/README.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "c66b1f881aa96ab7131d75eba0d61fc4d8337a90f056f585bf49e3fe467dc86d",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/metadata/README.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "81ad21c1c9f70464e68148cde3c282cb4b214b2b3522f433ae5c4c4d3c87c002",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/NAVIGATOR.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "a039c8ec76e26b3f56f988473515030cfa8a9233785a5bab5bad3dacd7bd2d15",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/README.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "72e72eedb4871fc4904ebabac1567d57870f5d668ab86db0bb458982a7950696",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/reports/docs-bootstrap.md",
+      "status": "historical",
+      "owner": "harness-maintainer",
+      "sha256": "8d7b37083e4c981a07681bd86ff781d75a4ada623ccf74cba657c1bf7088a817",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/reports/harness-restructure.md",
+      "status": "historical",
+      "owner": "harness-maintainer",
+      "sha256": "a406938d8ec5d49f6caa238ef18d8a1dd7883e7baa6af1abdd0789a6e7fdf295",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/reports/README.md",
+      "status": "historical",
+      "owner": "harness-maintainer",
+      "sha256": "ee5babb8451414828e8d3fd48ae719cafac75f6dc86d64d150933da20f4f64c2",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/scripts/README.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "ac73a6e6aa6e7c8e080ad25be12db59a4afcac4aa81e53feacc4778e717c6c89",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "harness/tests/README.md",
+      "status": "active",
+      "owner": "harness-maintainer",
+      "sha256": "5d1efa255d3204ff9a5eedb176bc4bf0e5421e741101aba36adfb590234ce0ea",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "PRD.md",
+      "status": "draft",
+      "owner": "product",
+      "sha256": "691b1182182b1dbbdcae04dca38216386e3c22fe06ac7e7b3679dea3265ba143",
+      "reviewed_on": "2026-10-17"
+    },
+    {
+      "path": "README.md",
+      "status": "draft",
+      "owner": "project-maintainer",
+      "sha256": "ed3e5f0dffc4f4f22f2cb262d7d0579cc91a51a99945d665d7bdbbc496c323af",
+      "reviewed_on": "2026-10-17"
+    }
+  ]
+}
